@@ -2,7 +2,7 @@ name: Android CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   # Build on all pull requests, regardless of target.
   pull_request:
 
