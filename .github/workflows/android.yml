@@ -12,6 +12,7 @@ jobs:
     strategy:
       fail-fast: false  # Allow tests to continue on other devices if they fail on one device.
       matrix:
+        java: ['11']
         api-level: [21, 30]
     steps:
       - name: checkout
