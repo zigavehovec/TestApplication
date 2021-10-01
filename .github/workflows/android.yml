@@ -19,6 +19,12 @@ jobs:
           java-version: 11
       - name: Build with Gradle
         run: ./gradlew build
+      - name: Upload results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: instrumentation-test-results ${{ matrix.api-level }}
+          path: ./**/build/outputs/apk/debug/**
 
   instrumentation-tests:
     name: Instrumentation tests
