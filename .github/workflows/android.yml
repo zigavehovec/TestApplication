@@ -29,10 +29,6 @@ jobs:
       fail-fast: false
       matrix:
         api-level:
-          - 21
-          - 23
-          - 26
-          - 29
           - 30
     steps:
       - uses: actions/checkout@v2
