@@ -2,9 +2,8 @@ name: Android CI
 
 on:
   push:
-    branches: [ master ]
-  # Build on all pull requests, regardless of target.
-  pull_request:
+    tags:
+      - 'v*' # Test on release tag commit (Eg. v4.11.0)
 
 jobs:
   unit-tests:
