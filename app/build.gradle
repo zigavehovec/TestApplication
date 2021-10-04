@@ -10,8 +10,8 @@ android {
     applicationId "work.vehovec.testapplication"
     minSdk 21
     targetSdk 30
-    versionCode 1
-    versionName "1.0"
+    versionCode 1000
+    versionName "1.00.0"
 
     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
   }
